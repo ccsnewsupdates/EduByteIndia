@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduBytes India - IGNOU Schedule Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <img src="logo.png" alt="EduBytes India Logo" class="logo-img">
+        <h1>EduBytes India</h1>
+
+        <div class="social-links">
+            <a href="https://t.me/EduBytes_India" target="_blank" class="social-link telegram">Join Telegram</a>
+            <a href="https://www.youtube.com/@EduByteIndia" target="_blank" class="social-link youtube">Subscribe YouTube</a>
+        </div>
+
+        <div class="manual-selection-area">
+            <label for="paperCodeSelect">Select Your Course and Add to List</label>
+            <div class="input-group">
+                <select id="paperCodeSelect">
+                    <option value="">-- Choose Your Course Code --</option>
+                </select>
+                <button id="addCodeBtn" onclick="addCode()">+ Add Course</button>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label>Your Selected Courses:</label>
+            <div id="selectedCodesContainer"></div>
+        </div>
+
+        <div class="button-group">
+            <button id="generateBtn" onclick="generateSchedule()">Generated Paper Schedule</button>
+            <button id="resetBtn" onclick="resetAll()">Reset</button>
+        </div>
+
+        <div id="scheduleResult"></div>
+        
+        <div id="instructions" class="instructions-container"></div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
